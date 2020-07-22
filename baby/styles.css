@@ -1,14 +1,5 @@
 html, body{
-   color: #fff;
-}
-
-.outer {
-  width: 100%;
-}
-
-.title {
-  width: 50%;
-  margin: auto;
+   background-color: #FAE60E;
 }
 
 h1 {
@@ -21,8 +12,8 @@ h1 {
 }
 
 [data-parallax]{
-  position: fixed;
-   width: 100%;
+  margin: 0 auto;
+   width: 50%;
    height: 100%;
    z-index: -1;
    background-color: #FAE60E;
@@ -30,9 +21,9 @@ h1 {
 
 [data-parallax] > *{
    position: absolute;
-   width: 100%;
+   width: 50%;
    height: 100%;
-   background-repeat: repeat;
+   background-repeat: no-repeat;
    background-size: 50vw 50vw;
 }
 
