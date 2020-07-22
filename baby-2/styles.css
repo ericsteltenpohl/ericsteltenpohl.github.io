@@ -1,0 +1,20 @@
+body{
+  margin: 0;
+  background-color: #1d1e22;
+}
+
+#container {
+  width: 50%;
+  margin: 0 auto:
+}
+
+.parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image:
+url(http://ericsteltenpohl.github.io/baby/images/Baby%20Lemon_Layer%201.png),   url(http://ericsteltenpohl.github.io/baby/images/Baby%20Lemon_Layer%202.png), url(http://ericsteltenpohl.github.io/baby/images/Baby%20Lemon_Layer%203.png), url(http://ericsteltenpohl.github.io/baby/images/Baby%20Lemon_Layer%204.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 10% 10%;
+}
