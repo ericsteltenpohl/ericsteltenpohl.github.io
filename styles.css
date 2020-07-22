@@ -1,0 +1,50 @@
+html, body{
+   color: #fff;
+}
+
+.outer {
+  width: 100%;
+}
+
+.title {
+  width: 50%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #000000;
+  float: left;
+  text-align: center;
+}
+
+[data-parallax]{
+  position: fixed;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   background-color: #FAE60E;
+}
+
+[data-parallax] > *{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-repeat: repeat;
+   background-size: 50vw 50vw;
+}
+
+[data-parallax] > *:nth-child(1){
+   background-image:url("images/Baby Lemon_Layer 4.png");
+}
+[data-parallax] > *:nth-child(2){
+   background-image: url("images/Baby Lemon_Layer 3.png");
+}
+[data-parallax] > *:nth-child(3){
+background-image: url("images/Baby Lemon_Layer 2.png");
+}
+[data-parallax] > *:nth-child(4){
+background-image: url("images/Baby Lemon_Layer 1.png");
+}
