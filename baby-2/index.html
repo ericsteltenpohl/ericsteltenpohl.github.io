@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Parallax Background</title>
+
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+  <body>
+      <div id="container">
+        <div id="scene">
+          <div id="layer" data-depth="0.0"><img src="images/baby lemon_layer 4.png"></div>
+          <div id="layer" data-depth="0.2"><img src="images/baby lemon_layer 3.png"></div>
+          <div id="layer" data-depth="0.4"><img src="images/baby lemon_layer 2.png"></div>
+          <div id="layer" data-depth="0.6"><img src="images/baby lemon_layer 1.png"></div>
+        </div>
+      </div>
+
+        <!-- Scripts -->
+        <script src="js/parallax.js"></script>
+
+        <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+        </script>
+
+  </body>
+</html>

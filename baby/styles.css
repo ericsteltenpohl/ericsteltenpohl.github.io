@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,700;0,900;1,700;1,900&display=swap');
+
+body {
+  background-color: #fae60e;
+}
+
 #container {
   width: 100%;
   height: 100%;
-  background-color: #fae60e
+  background-color: #fae60e;
 }
 
 #scene {
-  width: 50%;
+  width: 60%;
   height: 100%;
   margin: 0 auto;
 }
@@ -23,11 +29,51 @@ img {
 }
 
 #fruit {
+  position: sticky;
+  top: -20px;
   width:100%;
-  height:100%;
-  text-align: left;
+  height:100%
   z-index: -1;
 }
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #F7A0A8;
+  text-align: center;
+}
+
+/* Italics Text CSS
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+
+$text-shadow: BlackBerry;
+$text-color: yellow;
+$text-angle: -14deg;
+
+body {
+  padding:100px;
+  background:#333;
+  font-family: "Helvetica";
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+}
+h1 {
+  font-family: Impact,'Mr Dafoe', cursive;
+  font-size: 100px;
+  font-style: italic;
+  -webkit-transform: rotate($text-angle);
+  -moz-transform: rotate($text-angle);
+  -ms-transform: rotate($text-angle);
+  -o-transform: rotate($text-angle);
+  color:$text-color;
+  text-shadow: 1px 1px 0 $text-shadow,2px 2px 0 $text-shadow,3px 3px 0 $text-shadow,4px 4px 0 $text-shadow,5px 5px 0 $text-shadow,6px 6px 0 $text-shadow,7px 7px 0 $text-shadow,8px 8px 0 $text-shadow,9px 9px 0 $text-shadow,10px 10px 0 $text-shadow;
+}
+
+*/
+
+/* Rotate Text CSS
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 
