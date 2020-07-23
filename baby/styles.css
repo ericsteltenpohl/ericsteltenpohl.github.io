@@ -1,43 +1,23 @@
-html, body{
-   background-color: #FAE60E;
+#container {
+  width: 100%;
+  height: 720px;
+  background-color: #fae60e
 }
 
-.title {
-  float: left;
-}
-
-h1 {
-  font-size: 80px;
-  font-weight: bold;
-  font-family: sans-serif;
-  color: #FFF177;
-}
-
-[data-parallax]{
+#scene {
+  width: 50%;
+  height: 100%;
   margin: 0 auto;
-   width: 50%;
-   height: 100%;
-   z-index: -1;
-   background-color: #FAE60E;
 }
 
-[data-parallax] > *{
-   position: absolute;
-   width: 50%;
-   height: 100%;
-   background-repeat: no-repeat;
-   background-size: 50vw 50vw;
+#layer {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
-[data-parallax] > *:nth-child(1){
-   background-image:url("images/Baby Lemon_Layer 4.png");
-}
-[data-parallax] > *:nth-child(2){
-   background-image: url("images/Baby Lemon_Layer 3.png");
-}
-[data-parallax] > *:nth-child(3){
-background-image: url("images/Baby Lemon_Layer 2.png");
-}
-[data-parallax] > *:nth-child(4){
-background-image: url("images/Baby Lemon_Layer 1.png");
+img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
 }
