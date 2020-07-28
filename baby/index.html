@@ -10,19 +10,36 @@
 
 </head>
   <body>
-      <div id="container">
+      <div id="container-1">
 
         <div id="title">
           <h1>baby steltenpohl is the size of a</h1>
-          <h1 class="fruit">lemon</h1>
+          <h1 class="peach">peach</h1>
         </div>
 
-        <div id="scene">
-          <div id="layer" data-depth="0.0"><img src="images/babylemon_4.png"></div>
-          <div id="layer" data-depth="0.2"><img src="images/babylemon_3.png"></div>
-          <div id="layer" data-depth="0.4"><img src="images/babylemon_2.png"></div>
-          <div id="layer" data-depth="0.6"><img src="images/babylemon_1.png"></div>
+        <div id="scene-1">
+          <div id="layer" data-depth="0.1"><img src="images/babypeach_4.png"></div>
+          <div id="layer" data-depth="0.2"><img src="images/babypeach_3.png"></div>
+          <div id="layer" data-depth="0.4"><img src="images/babypeach_2.png"></div>
+          <div id="layer" data-depth="0.6"><img src="images/babypeach_1.png"></div>
         </div>
+
+      </div>
+
+        <div id="container-2">
+
+          <div id="title">
+            <h1>baby steltenpohl was the size of a</h1>
+            <h1 class="lemon">lemon</h1>
+          </div>
+
+          <div id="scene-2">
+            <div id="layer" data-depth="0.0"><img src="images/babylemon_4.png"></div>
+            <div id="layer" data-depth="0.2"><img src="images/babylemon_3.png"></div>
+            <div id="layer" data-depth="0.4"><img src="images/babylemon_2.png"></div>
+            <div id="layer" data-depth="0.6"><img src="images/babylemon_1.png"></div>
+          </div>
+
       </div>
 
 <!-- Rotating Text html
@@ -38,10 +55,22 @@
   -->
 
         <!-- Scripts -->
+
+        <!-- Scene 1 -->
+
         <script src="js/parallax.js"></script>
 
         <script>
-        var scene = document.getElementById('scene');
+        var scene = document.getElementById('scene-1');
+        var parallaxInstance = new Parallax(scene);
+        </script>
+
+        <!-- Scene 2 -->
+
+        <script src="js/parallax.js"></script>
+
+        <script>
+        var scene = document.getElementById('scene-2');
         var parallaxInstance = new Parallax(scene);
         </script>
 
