@@ -4,26 +4,39 @@ body {
   background-color: #fdd2b3;
 }
 
-#container-1 {
+#container-avacado {
   width: 100%;
   height: 100%;
   padding-bottom: 50px;
   background-color: #fdd2b3;
 }
 
-#container-2 {
+#container-peach {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  background-color: #fdd2b3;
+}
+
+#container-lemon {
   width: 100%;
   height: 100%;
   background-color: #fdd2b3;
 }
 
-#scene-1{
+#scene-avacado {
   width: 50%;
   height: 100%;
   margin: 0 auto;
 }
 
-#scene-2{
+#scene-peach {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#scene-lemon {
   width: 50%;
   height: 100%;
   margin: 0 auto;
@@ -64,6 +77,10 @@ h1.lemon {
 
 h1.peach {
   color:#F7A0A8
+}
+
+h1.avacado {
+  color:#c5781c
 }
 
 /* Italics Text CSS
