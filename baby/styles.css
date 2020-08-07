@@ -83,6 +83,38 @@ h1.avacado {
   color:#c5781c
 }
 
+/* Star Shape */
+#star {
+  position: fixed;
+  top: 6vw;
+  right: 6vw;
+}
+
+#burst-12 {
+  background: #5EB34A;
+  content: "";
+  width: 14vw;
+  height: 14vw;
+  position: relative;
+  text-align: center;
+}
+#burst-12:before,
+#burst-12:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14vw;
+  width: 14vw;
+  background: #5EB34A;
+}
+#burst-12:before {
+  transform: rotate(30deg);
+}
+#burst-12:after {
+  transform: rotate(60deg);
+}
+
 /* Italics Text CSS
 @import "compass/css3";
 @import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
