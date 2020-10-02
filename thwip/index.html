@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Spookeasy</title>
+
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<script src="js/textate.js"></script>
+
+</head>
+  <body>
+      <div id="spookeasy">
+
+        <div id="title">
+          <h1>Spookeasy</h1>
+        </div>
+
+        <div id="scene-spookeasy">
+          <div id="layer" data-depth="0.0"><img src="images/spookeasy_1.png"></div>
+          <div id="layer" data-depth="0.2"><img src="images/spookeasy_2.png"></div>
+          <div id="layer" data-depth="0.4"><img src="images/spookeasy_3.png"></div>
+          <div id="layer" data-depth="0.6"><img src="images/spookeasy_4.png"></div>
+          <div id="layer" data-depth="0.8"><img src="images/spookeasy_5.png"></div>
+        </div>
+
+      </div>
+
+<!-- Rotating Text html
+
+        <div class="text">
+          <p>Baby</p>
+          <p>
+            <span class="word wisteria">Steltenpohl.</span>
+            <span class="word belize">Lemon.</span>
+          </p>
+        </div>
+      </div>
+  -->
+
+        <!-- Scripts -->
+
+        <!-- Scene 1 -->
+
+        <script src="js/parallax.js"></script>
+
+        <script>
+        var scene = document.getElementById('scene-spookeasy');
+        var parallaxInstance = new Parallax(scene);
+        </script>
+
+  </body>
+</html>
