@@ -1,26 +1,62 @@
 
-toc = document.getElementById('ToC');
+// Get ToC div
+    toc = document.getElementById("ToC");
 
-tocHeader = document.createElement('h2');
-tocHeader.innerText = 'Table of contents';
-toc.appendChild(tocHeader);
+    //Add a header
+    tocHeader = document.createElement("h2");
+    tocHeader.innerText="Table of contents";
+    toc.appendChild(tocHeader);
 
-tocList = document.createElement('ul');
+    // Create a list for the ToC entries
+    tocList = document.createElement("ul");
 
-headers = document.getElementsByTagName('h3');
+    // Get the h2 tags - ToC entries
+    headers2 = document.getElementsByTagName("h2");
 
-for (i = 0; i < headers.length; i++) {
-  name = 'h'+i;
-  headers[i].id=name;
-  tocListItem = document.createElement('li');
-  tocEntry = document.createElement('a');
-  tocEntry.setAttribute('href','#'+name);
-  tocEntry.innerText = headers[i].innerText;
-  tocListItem.appendChild(tocEntry);
-  tocList.appendChild(tocListItem);
-}
+    // For each h2
+    for (i = 0; i < headers2.length; i++){
 
-toc.appendChild(tocList);
+      // Create an id
+      name = "h"+i;
+      headers2[i].id=name;
+
+      // a list item for the entry
+      tocListItem = document.createElement("li");
+
+      // a link for the h3
+      tocEntry = document.createElement("a");
+      tocEntry.setAttribute("href","#"+name);
+      tocEntry.innerText=headers2[i].innerText;
+
+      tocListItem.appendChild(tocEntry);
+      tocList.appendChild(tocListItem);
+    }
+
+    // Get the h3 tags - ToC entries
+    headers3 = document.getElementsByTagName("h3");
+
+    // For each h2
+    for (i = 0; i < headers3.length; i++){
+
+      // Create an id
+      name = "h"+i;
+      headers3[i].id=name;
+
+      // a list item for the entry
+      tocListItem = document.createElement("li");
+
+      // a link for the h3
+      tocEntry = document.createElement("a");
+      tocEntry.setAttribute("href","#"+name);
+      tocEntry.innerText=headers3[i].innerText;
+
+      tocListItem.appendChild(tocEntry);
+      tocList.appendChild(tocListItem);
+    }
+
+
+    toc.appendChild(tocList);
+
 
 // TOC Tutorial: https://benfrain.com/beginner-js-tutorial-automatically-make-anchor-jump-links-with-javascript/#h-H2_0
 
