@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;1,400;1,600&display=swap');
+
+body {
+  background-image: url("images/deepmore_background.jpg");
+  background-repeat: repeat;
+}
+
+.menu {
+  height: 64px;
+  background-color: #090809;
+  border-bottom: 1px solid #47D18C;
+}
+
+.header {
+  width: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.breadcrumb-container {
+  padding: 15px 10px 0px 10px ;
+  font-family: 'Fraunces', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #303332
+}
+
+.breadcrumb {
+  background: #fff;
+  border: 1px solid #CBC6C3;
+}
+
+.breadcrumb-item {
+  display:inline;
+}
+
+.breadcrumb-item:before {
+  content: '';
+  display: inline-block;
+  vertical-align: text-top;
+  height: 15px;
+  width: 15px;
+  background: url(images/breadcrumb-item.svg) no-repeat;
+  background-size: contain;
+  margin-left: 12px;
+}
+
+.content-container {
+  width: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 15px 10px!important;
+  display: flex;
+}
+
+.sidebar-menu {
+  position: static;
+  float: none;
+  max-width: 200px;
+  min-width: 200px;
+  margin-right: 30px;
+  margin-left: 0;
+  padding: 0;
+}
+
+.nav {
+  background: #fff;
+  border: 1px solid #CBC6C3;
+}
+
+.page {
+  position: static;
+  float: none;
+  width: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: none!important;
+  min-width: 0;
+}
+
+.aside-torn-paper {
+  overflow: auto;
+  color: var(--theme-quote-fg-color,#242527);
+  margin: 20px 0;
+  line-height: 1.6;
+  font-size: 14px;
+  font-family: 'Fraunces', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #303332;
+  border: solid transparent;
+  border-width: 20px 10px;
+  border-image-source: var(--theme-quote-border,url(https://media.dndbeyond.com/ddb-compendium-client/5f1f1d66d16be68cf09d6ca172f8df92.png));
+  border-image-repeat: repeat;
+  border-image-slice: 20 10 20 10 fill;
+  padding: 10px;
+}
+
+ul {
+  padding-top: 4px!important;
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+p {
+  font-family: 'Fraunces', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #303332
+  text-align: left;
+}
+
+a {
+  color: #47D18C;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+
+}
+
+h1 {
+  font-family: 'UnifrakturCook', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #303332;
+  text-align: left;
+  display: inline;
+}
+
+h1:after {
+  content: '';
+  width: 100%;
+  max-width: 1200px;
+  margin: 5px auto 20px;
+  height: 3px;
+  background-color: #47D18C;
+  display: block;
+}
