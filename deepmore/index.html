@@ -5,42 +5,6 @@
 <title>Deepmore</title>
 
 <link rel="stylesheet" type="text/css" href="styles.css" />
-<script src="nav.js">
-
-toc = document.getElementById("ToC");
-
-//Add a header
-tocHeader = document.createElement("h2");
-tocHeader.innerText="Table of contents";
-toc.appendChild(tocHeader);
-
-// Create a list for the ToC entries
-tocList = document.createElement("ul");
-
-// Get the h3 tags - ToC entries
-headers = document.getElementsByTagName("h3");
-
-// For each h3
-for (i = 0; i < headers.length; i++){
-
-  // Create an id
-  name = "h"+i;
-  headers[i].id=name;
-
-  // a list item for the entry
-  tocListItem = document.createElement("li");
-
-  // a link for the h3
-  tocEntry = document.createElement("a");
-  tocEntry.setAttribute("href","#"+name);
-  tocEntry.innerText=headers[i].innerText;
-
-  tocListItem.appendChild(tocEntry);
-  tocList.appendChild(tocListItem);
-}
-toc.appendChild(tocList);
-
-</script>
 
 </head>
   <body>
@@ -48,12 +12,10 @@ toc.appendChild(tocList);
   </div>
   <div class="header">
       <div class="breadcrumb-container">
-      <div id="ToC">
-      </div>
       <nav class="breadcrumb">
         <ul>
           <li class="breadcrumb-item">Breadcrumb Item 1</li>
-          <li class="breadcrumb-item">Breadcrumb 2</li>
+          <li class="breadcrumb-item">Breadcrumb Item 2</li>
           <li class="breadcrumb-item">Breadcrumb Item 3</li>
         </ul>
       </nav>
@@ -62,23 +24,28 @@ toc.appendChild(tocList);
 <div class="content-container">
   <div class="content">
     <div class="sidebar-menu">
-        <div class="nav">
-          <ul>
-            <li>Test Item 1</li>
-            <li>Test Item 2</li>
-            <li>Test Item 3</li>
-          </ul>
+        <div class="nav" id="ToC">
       </div>
     </div>
       <div class="page">
         <h1>Deepmore</h1>
         <h2>Places</h2>
+        <h3>Things</h3>
         <p>Robble Blob Oblonson approached the well slowly. <a href="https://www.dndbeyond.com/sources/wa/frozen-sick#StoryOverview2">A low creek</a> and soft and steady drip eminated from deep within. Although there was no moon, a shadow cast forth reaching out towards Robble.</p>
         <aside class="aside-torn-paper"> This content is contained in torn paper </aside>
+        <h2>Objects</h2>
+        <h3>Legendary Books</h3>
       </div>
     </div>
   </div>
-        <!-- Scripts -->
+
+
+
+
 
   </body>
+  <footer>
+  <!-- Scripts -->
+  <script src="nav.js"></script>
+  </footer>
 </html>

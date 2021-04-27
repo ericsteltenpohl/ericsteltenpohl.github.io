@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;1,400;1,600&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url("images/deepmore_background.jpg");
   background-repeat: repeat;
@@ -46,6 +50,27 @@ body {
   margin-left: 12px;
 }
 
+.tocHeader1 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.tocHeader1 a {
+  color: #090809;
+  text-decoration: none;
+}
+
+.tocHeader1 a:hover {
+  color: #47D18C;
+  text-decoration: none;
+}
+
+.tocHeader2 {
+  padding: 5px 0px;
+  list-style: none;
+}
+
 .content-container {
   width: auto;
   max-width: 1200px;
@@ -70,6 +95,22 @@ body {
 .nav {
   background: #fff;
   border: 1px solid #CBC6C3;
+  padding: 15px;
+}
+
+.nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav li a {
+  color: #090809;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  color: #47D18C;
+  text-decoration: none;
 }
 
 .page {
