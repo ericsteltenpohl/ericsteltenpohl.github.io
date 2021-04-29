@@ -24,7 +24,11 @@ body {
   }
 
   .feature {
-    grid-column: 1/ span 3;
+    grid-column: 1/ span 2;
+  }
+
+  .playlist {
+    grid-column: 3/ span 1;
   }
 
   .body {
