@@ -18,7 +18,7 @@ body {
   grid-gap: 20px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   .band {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -37,7 +37,7 @@ body {
 
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1200px) {
   .band {
     grid-template-columns: 1fr 1fr 1fr;
   }
