@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
 body {
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .band {
@@ -18,22 +18,22 @@ body {
 
 @media only screen and (min-width: 600px) {
   .band {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .feature {
-    grid-column: 1/ span 4;
+    grid-column: 1/ span 3;
   }
 
   .body {
-    grid-column: span 2;
+    grid-column: span 1;
   }
 
 }
 
 @media only screen and (min-width: 850px) {
   .band {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 .card .thumb {
-  padding-bottom: 50%;
+  padding-bottom: 55%;
   background-size: cover;
   background-position: center center;
 }
