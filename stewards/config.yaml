@@ -1,0 +1,85 @@
+baseURL: https://example.com
+languageCode: en-us
+DefaultContentLanguage: en
+title: Stewards of Dawn
+theme: hugo-theme-techdoc
+hasCJKLanguage: yes
+metaDataFormat: yaml
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: no
+enableMissingTranslationPlaceholders: no
+params:
+  algolia:
+    params:
+      - tags
+      - categories
+    vars:
+      - title
+      - summary
+      - content
+      - date
+      - publishdate
+      - description
+      - permalink
+      - keywords
+      - lastmod
+  algolia_apiKey: cbf12a63ff72d9c5dc0c10c195cf9128
+  algolia_appId: 7W4SAN4PLK
+  algolia_indexName: hugo-demo-techdoc
+  algolia_search_enable: yes
+  custom_background_color: ''
+  custom_font_color: ''
+  dateformat: ''
+  description: put your description
+  github_doc_repository: https://github.com/thingsym/hugo-theme-techdoc
+  github_doc_repository_path: ''
+  github_repository: https://github.com/thingsym/hugo-theme-techdoc
+  google_analytics_id: ''
+  google_site_verification: ''
+  images: images/og-image.png
+  menu_exclusion:
+    - archives
+    - archive
+    - blog
+    - entry
+    - post
+    - posts
+  menu_style: open-menu
+  tag_manager_container_id: ''
+  title: Hugo Techdoc Theme
+  version: 0.9.9
+menu:
+  main:
+    - identifier: home
+      name: Home
+      pre: <i class='fa fa-heart'></i>&nbsp;
+      url: /
+      weight: 1
+    - identifier: twitter
+      name: Twitter
+      params:
+        class: twitter-menu-item
+      post: ' <b>post!</b>'
+      pre: '<b>pre!</b> '
+      url: https://twitter.com/thingsym
+      weight: 2
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: yes
+  tableOfContents:
+    endLevel: 6
+    ordered: no
+    startLevel: 2
+outputs:
+  home:
+    - HTML
+    - RSS
+    - Algolia
+outputFormats:
+  Algolia:
+    baseName: algolia
+    isPlainText: yes
+    mediaType: application/json
+    notAlternative: yes
