@@ -1,7 +1,7 @@
 baseURL: https://example.com
 languageCode: en-us
 DefaultContentLanguage: en
-title: Stewards of Dawn
+title: Stewards of Dawns
 theme: hugo-theme-techdoc
 hasCJKLanguage: yes
 metaDataFormat: yaml
@@ -30,10 +30,10 @@ params:
   custom_background_color: ''
   custom_font_color: ''
   dateformat: ''
-  description: put your description
-  github_doc_repository: https://github.com/thingsym/hugo-theme-techdoc
+  description: ''
+  github_doc_repository: ''
   github_doc_repository_path: ''
-  github_repository: https://github.com/thingsym/hugo-theme-techdoc
+  github_repository: ''
   google_analytics_id: ''
   google_site_verification: ''
   images: images/og-image.png
@@ -47,22 +47,22 @@ params:
   menu_style: open-menu
   tag_manager_container_id: ''
   title: Hugo Techdoc Theme
-  version: 0.9.9
+  version: 
 menu:
   main:
     - identifier: home
       name: Home
-      pre: <i class='fa fa-heart'></i>&nbsp;
+      pre: 
       url: /
       weight: 1
     - identifier: twitter
-      name: Twitter
+      name: Beyond
       params:
         class: twitter-menu-item
-      post: ' <b>post!</b>'
-      pre: '<b>pre!</b> '
-      url: https://twitter.com/thingsym
-      weight: 2
+      post:
+      pre:
+      url: https://www.dndbeyond.com/campaigns/3214365
+      weight: 10
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:

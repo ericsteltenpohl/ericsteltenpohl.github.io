@@ -404,7 +404,7 @@ fieldset {
   font-size: 18px;
   line-height: 1.6666666667;
   color: #000;
-  font-family: var(--custom-font-family-base, -apple-system, BlinkMacSystemFont, "游ゴシック体", YuGothic, "メイリオ", Meiryo, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  font-family: 'Fraunces', serif);
   -webkit-font-feature-settings: "pwid";
           font-feature-settings: "pwid";
 }
@@ -420,8 +420,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--custom-font-family-headings, -apple-system, BlinkMacSystemFont, "游ゴシック体", YuGothic, "メイリオ", Meiryo, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
-  font-weight: bold;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
   line-height: 1.6666666667;
 }
 h1 > small,
@@ -1240,7 +1240,7 @@ main {
   border-bottom: solid 1px #eee;
 }
 .sidebar a:hover {
-  color: #404040;
+  color: #47D18C;
   background: #eee;
   border-left: solid 4px #ccc;
 }
